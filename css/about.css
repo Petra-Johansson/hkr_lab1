@@ -1,0 +1,12 @@
+.img-container {
+  display: flex;
+  border-radius: 100%;
+  max-width: 80px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+}

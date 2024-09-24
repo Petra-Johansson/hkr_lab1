@@ -1,6 +1,6 @@
-# This is my repo for **Lab 1** for the course JavaScript for Web development at HKR
+# This is my repo for Lab 1 for the course JavaScript for Web development at HKR
 
-The goal of this Lab was to create a _Advanced Personal Portfolio_ using only **HTML** and **CSS** (no pre-processor).
+The goal of this lab was to construct an _advanced personal portfolio_ website with a deep focus on HTML and CSS (no pre-processor).
 The requirements where the following:
 
 > - Develop a multi-page website (minimum 4 pages) with consistent, advanced styling.
