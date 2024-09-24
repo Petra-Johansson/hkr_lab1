@@ -13,9 +13,9 @@
   scroll-behavior: smooth;
   overflow-x: hidden;
   transition-duration: 250ms;
+  box-sizing: border-box;
 }
 body {
-  box-sizing: border-box;
   background-color: var(--light-color);
   color: var(--dark-color);
   display: flex;
