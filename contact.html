@@ -26,6 +26,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a class="active" href="contact.html">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </nav>
     </header>
@@ -57,7 +58,13 @@
           enctype="multipart/form-data"
         >
           <label for="name">Your name: </label>
-          <input type="text" id="name" name="name" placeholder="Your Name" />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
 
           <label for="email">Your E-mail:</label>
           <input
@@ -65,9 +72,10 @@
             id="email"
             name="email"
             placeholder="your@email.com"
+            required
           />
           <label for="message">Your message:</label>
-          <textarea rows="4" id="message" name="message"></textarea>
+          <textarea rows="4" id="message" name="message" required></textarea>
           <input type="submit" value="Send" class="send-btn" />
         </form>
       </div>
@@ -75,27 +83,40 @@
 
     <footer>
       <div class="footer-grid">
-        <div>
-          <a
-            class="grid-item"
-            href="https://github.com/Petra-Johansson/hkr_lab1"
-            target="_blank"
-          >
-            <i class="fa-brands fa-github fa-2x"></i>
-            <span>My Lab1 repo on GitHub</span>
-          </a>
+        <div class="footer-links">
+          <h3>Internal links</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
         </div>
-        <div>
+        <div class="footer-links">
+          <h3>Contact and external links</h3>
+          <a class="grid-item" href="contact.html">
+            <i class="fa-solid fa-pencil"></i><span>Contact me</span></a
+          >
           <a
             class="grid-item"
             href="https://www.linkedin.com/in/petra-johansson89/"
             target="_blank"
           >
-            <i class="fa-brands fa-linkedin fa-2x"></i>
+            <i class="fa-brands fa-linkedin"></i>
             <span> Connect on LinkedIn</span>
+          </a>
+
+          <a
+            class="grid-item"
+            href="https://github.com/Petra-Johansson/hkr_lab1"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github"></i>
+            <span>My Lab1 repo on GitHub</span>
           </a>
         </div>
       </div>
+
       <p class="copyright">Copyright by me, Petra, 2024</p>
     </footer>
   </body>

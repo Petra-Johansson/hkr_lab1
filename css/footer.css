@@ -25,6 +25,17 @@ footer .copyright {
     text-decoration: none;
     color: var(--link-color);
   }
+
+  h3 {
+    font-weight: 300;
+    color: var(--light-color);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+
+  .footer-links a {
+    padding: 0.6em 0;
+  }
 }
 
 @media screen and (max-width: 768px) {

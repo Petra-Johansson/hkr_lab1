@@ -24,26 +24,140 @@
       <nav>
         <ul>
           <li><a href="about.html">About</a></li>
-          <li><a class="active" href="projects.html">Projects</a></li>
+          <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a class="active" href="gallery.html">Gallery</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <h1>A Gallery</h1>
-      <p>This is a gallery that uses CSS grid</p>
+      <p>
+        This is a gallery that uses CSS grid for layout and displays 9 pictures,
+        each representing a month of the year, randomly picked when adding the
+        images.
+      </p>
+      <p>
+        I decided to stick with the 3 x 3 layout until the screen reaches
+        max-width of 430px
+      </p>
 
       <article class="gallery">
-        <img src="img/april.jpg" />
-        <img src="img/august.jpg" />
-        <img src="img/december.jpg" />
-        <img src="img/july.jpg" />
-        <img src="img/june.jpg" />
-        <img src="img/may.jpg" />
-        <img src="img/november.jpg" />
-        <img src="img/october.jpg" />
-        <img src="img/september.jpg" />
+        <div class="img-container">
+          <img
+            src="img/april.jpg"
+            alt="Img representing April"
+            title="Img representing April"
+          />
+          <p class="img-text">Img representing April</p>
+        </div>
+
+        <div class="img-container">
+          <img
+            src="img/august.jpg"
+            alt="Img representing August"
+            title="Img representing August"
+          />
+          <p class="img-text">Img representing August</p>
+        </div>
+
+        <div class="img-container">
+          <img
+            src="img/december.jpg"
+            alt="Img representing December"
+            title="Img representing December"
+          />
+          <p class="img-text">Img representing December</p>
+        </div>
+
+        <div class="img-container">
+          <img
+            src="img/july.jpg"
+            alt="Img representing July"
+            title="Img representing July"
+          />
+          <p class="img-text">Img representing July</p>
+        </div>
+        <div class="img-container">
+          <img
+            src="img/june.jpg"
+            alt="Img representing June"
+            title="Img representing June"
+          />
+          <p class="img-text">Img representing June</p>
+        </div>
+        <div class="img-container">
+          <img
+            src="img/may.jpg"
+            alt="Img representing May"
+            title="Img representing May"
+          />
+          <p class="img-text">Img representing May</p>
+        </div>
+        <div class="img-container">
+          <img
+            src="img/november.jpg"
+            alt="Img representing November"
+            title="Img representing November"
+          />
+          <p class="img-text">Img representing November</p>
+        </div>
+        <div class="img-container">
+          <img
+            src="img/october.jpg"
+            alt="Img representing October"
+            title="Img representing October"
+          />
+          <p class="img-text">Img representing October</p>
+        </div>
+        <div class="img-container">
+          <img
+            src="img/september.jpg"
+            alt="Img representing September"
+            title="Img representing September"
+            class="hover-filter"
+          />
+          <p class="img-text">Img representing September</p>
+        </div>
       </article>
     </main>
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-links">
+          <h3>Internal links</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Contact and external links</h3>
+          <a class="grid-item" href="contact.html">
+            <i class="fa-solid fa-pencil"></i><span>Contact me</span></a
+          >
+          <a
+            class="grid-item"
+            href="https://www.linkedin.com/in/petra-johansson89/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+            <span> Connect on LinkedIn</span>
+          </a>
+
+          <a
+            class="grid-item"
+            href="https://github.com/Petra-Johansson/hkr_lab1"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github"></i>
+            <span>My Lab1 repo on GitHub</span>
+          </a>
+        </div>
+      </div>
+
+      <p class="copyright">Copyright by me, Petra, 2024</p>
+    </footer>
   </body>
 </html>
