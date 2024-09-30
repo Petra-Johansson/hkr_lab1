@@ -3,9 +3,8 @@
   margin: 0 auto;
 }
 .about-article {
-  p {
-    width: 70ch;
-  }
+  margin: 0 auto;
+  width: 75ch;
 
   h2 {
     padding-top: 0.6em;
@@ -15,14 +14,17 @@
   }
 }
 .presentation {
+  width: 75ch;
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
   margin: 1em auto;
 
   .img-container {
     display: flex;
     border-radius: 100%;
-    max-width: 120px;
+    border: 5px solid var(--third-color);
+    width: 60%;
     overflow: hidden;
 
     img {
@@ -50,8 +52,6 @@
 }
 
 table {
-  width: 65ch;
-
   th {
     text-align: left;
     border-bottom: 1px solid var(--dark-color);
@@ -77,6 +77,9 @@ table {
 }
 
 @media screen and (max-width: 768px) {
+  .about-article {
+    width: 100%;
+  }
   .img-container {
     max-width: 50px;
   }
