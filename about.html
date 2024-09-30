@@ -3,24 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lab 1 - About me page" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+
     <script
       src="https://kit.fontawesome.com/af716c3c48.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <title>About me</title>
   </head>
   <body>
     <header>
-      <h1><a href="index.html">PJ's Page</a></h1>
+      <h1><a href="index.html">Petras portfolio</a></h1>
       <nav>
         <ul>
           <li><a class="active" href="about.html">About</a></li>
@@ -31,19 +39,111 @@
       </nav>
     </header>
     <main>
-      <article>
+      <article class="about-article-wrapper">
         <h1>About me</h1>
-        <p></p>
-        <div class="img-container">
-          <img src="img/me-small.png" />
-        </div>
+        <section class="presentation">
+          <div class="img-container">
+            <img src="img/me-small.png" alt="small picture of me" />
+          </div>
+          <div>
+            <p>My name is Petra and I live in Stockholm.</p>
+            <p>
+              I am an aspiring Frontend developer with a keen interest in
+              accessibility and my goal is to work with projects that can make a
+              good difference in peoples lives.
+            </p>
+            <div class="article-links">
+              <a href="#personal">Go to Personal</a>
+              <a href="#goals">Go to Goals</a>
+              <a href="#skills">Go to Skills</a>
+            </div>
+          </div>
+        </section>
+
+        <article class="about-article" id="personal">
+          <h2>Personal stuff</h2>
+          <p>
+            I have always enjoyed working with people - so my whole adult life
+            has been about me working with different sorts of services. From
+            security at events, such as music festivals and football games, to
+            spending hours and hours in a small grocery store where our regulars
+            amost became as close as familymembers.
+          </p>
+          <p></p>
+        </article>
+        <article class="about-article" id="goals">
+          <h2>Goals</h2>
+          <p>
+            I have a goal to, as a future developer, be part of projects that
+            actively help people improve theire lives. I want to create
+            websites/applications that alignes with my ethical and moral
+            standingpoints and has a real purpose.
+          </p>
+        </article>
+        <article class="about-article" id="skills">
+          <h2>Skills I've gained from education</h2>
+          <table>
+            <tr>
+              <th>Technique</th>
+              <th>Explanation</th>
+            </tr>
+            <tr>
+              <td>HTML</td>
+              <td>
+                I have some knowledge about HTML but I want to learn more - and
+                there is a lot more to learn! Especially when it comes to become
+                "fluent" in semantics and accessibility.
+              </td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>
+                I have some knowledge about CSS but I want to learn more - and
+                there is a lot more to learn!
+              </td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>
+                I have som basic knowledge about JavaScript but I am looking
+                forward to the next part of this course to learn more, and
+                better!
+              </td>
+            </tr>
+            <tr>
+              <td>Git</td>
+              <td>
+                I have som basic knowledge about working with Git in combination
+                with GitHub that I would love to improve.
+              </td>
+            </tr>
+            <tr>
+              <td>PHP</td>
+              <td>I am currently doing a course in PHP to learn about it</td>
+            </tr>
+            <tr>
+              <td>Figma</td>
+              <td>
+                I have some experience with (free) Figma from doing a course in
+                Interface design.
+              </td>
+            </tr>
+            <tr>
+              <td>Databases</td>
+              <td>
+                I have some experience of working with both SQL databases
+                (mainly PostgreSQL) aswell as NoSQL (MongoDB) and it's something
+                I really like and would love to get better at.
+              </td>
+            </tr>
+          </table>
+        </article>
       </article>
     </main>
 
     <footer>
       <div class="footer-grid">
         <div class="footer-links">
-          <h3>Internal links</h3>
           <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
@@ -52,7 +152,6 @@
           </ul>
         </div>
         <div class="footer-links">
-          <h3>Contact and external links</h3>
           <a class="grid-item" href="contact.html">
             <i class="fa-solid fa-pencil"></i><span>Contact me</span></a
           >
@@ -76,7 +175,12 @@
         </div>
       </div>
 
-      <p class="copyright">Copyright by me, Petra, 2024</p>
+      <div class="last-row">
+        <a href="#" class="grid-item"
+          >Click here to Read the privacy policy and terms of service</a
+        >
+        <p class="copyright">Copyright by me, Petra, 2024</p>
+      </div>
     </footer>
   </body>
 </html>

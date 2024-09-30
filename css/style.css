@@ -3,8 +3,8 @@
   --light-color: rgb(250, 247, 240);
   --dark-color: rgb(74, 73, 71);
   --third-color: rgb(177, 116, 87);
-  --link-color: rgb(216, 210, 194);
-  --accent-color: rgb(105, 132, 116);
+  --link-color: rgb(255, 254, 250);
+  --accent-color: rgb(88, 112, 98);
 }
 
 * {
@@ -46,8 +46,13 @@ main {
   align-items: center;
   h1 {
     margin: 1em 0;
+    padding: 0.6em;
     text-align: center;
     font-family: "Playwrite DK Uloopet", "Montserrat";
+  }
+  p {
+    max-width: 70ch;
+    margin-bottom: 1em;
   }
 }
 li {
@@ -74,53 +79,8 @@ h1 {
   font-size: 1.6em;
 }
 
-header {
-  background-color: var(--accent-color);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2em;
-  padding: 1.5em;
-
-  h1 a {
-    font-family: "Playwrite DK Uloopet", "Montserrat";
-  }
-  nav ul {
-    display: flex;
-    align-items: center;
-    gap: 2.5em;
-    letter-spacing: 2px;
-  }
-
-  .active {
-    background-color: var(--third-color);
-    padding: 0.4em;
-  }
-
-  :focus {
-    border: 2px solid var(--third-color);
-  }
-}
-
 code {
   font-family: "Courier New", monospace;
-}
-@media screen and (max-width: 768px) {
-  header {
-    width: 100%;
-    flex-direction: column;
-    padding: 0.5em 0;
-    gap: 0;
-
-    nav ul {
-      gap: 1em;
-    }
-
-    a {
-      padding: 0;
-      font-size: 0.7em;
-    }
-  }
 }
 
 @media screen and (max-width: 340px) {
