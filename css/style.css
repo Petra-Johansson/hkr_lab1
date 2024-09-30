@@ -25,10 +25,16 @@
 }
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: var(--dak-color);
+    background-color: var(--dark-color);
     color: var(--light-color);
   }
 }
+/* Not used right now, but works to set main to dark/light 
+#color-scheme:checked ~ .color-scheme-wrapper {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+*/
 body {
   display: flex;
   flex-direction: column;
@@ -83,6 +89,21 @@ code {
   font-family: "Courier New", monospace;
 }
 
+.index-article {
+  h2 {
+    margin: 1em 0;
+  }
+  .ex-list li {
+    margin-top: 0.7em;
+    width: 65ch;
+
+    &::before {
+      content: " - ";
+      color: var(--accent-color);
+      font-weight: bold;
+    }
+  }
+}
 @media screen and (max-width: 340px) {
   body {
     font-size: 0.7em;

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <meta name="description" content="Lab 1 - Index page" />
+    <meta name="description" content="Lab 1 - Index page" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,7 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-<link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet:wght@100..400&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/af716c3c48.js"
       crossorigin="anonymous"
@@ -33,14 +36,41 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>Hello &#128075</h1>
 
-      <article><h2>This is the start of my portfolio page</h2>
-      <p>Right now it's created using only <code>HTML</code> and <code>CSS</code>, since JavaScript was not to be used in this part of the course.</p>
+    <main class="color-scheme-wrapper">
+      <!-- Not used right now because it looks weird to not beeing able to set it to affect body 
+      <input id="color-scheme" type="checkbox" name="color-scheme">
+      <label for="color-scheme">Dark / Light mode</label> -->
 
-    <p>When the course is completed, I will do some re-work on it and add some JavaScript to make it a bit more dynamic and interesting.
-      For example: I will create a function and apply it to the links in the navbar, to dynamically set the styling depending on if a link is active or not. Right now each .html-page's navabr is altered to have the "active" class set. </p>
+      <h1>Hello &#128075;</h1>
+
+      <article class="index-article">
+        <h2>This is the start of my portfolio page</h2>
+        <p>
+          Right now it's created using only <code>HTML</code> and
+          <code>CSS</code>, since JavaScript was not to be used in this part of
+          the course.
+        </p>
+
+        <p>
+          When the course is completed, I will do some re-work on it and add
+          some JavaScript to make it a bit more dynamic and interesting. For
+          example:
+        </p>
+        <ul class="ex-list">
+          <li>
+            I will develop a function to dynamically apply styling to the navbar
+            links, determining if a link is active or not. Currently, each
+            individual HTML page has the "active" class manually added to its
+            respective navbar link.
+          </li>
+
+          <li>
+            I aim to implement a proper Dark/Light mode toggle. However, I
+            believe this could be challenging with just HTML and CSS since it's
+            not possible to directly target parent elements like the body.
+          </li>
+        </ul>
       </article>
     </main>
 
@@ -81,7 +111,7 @@
         <a href="#" class="grid-item"
           >Click here to Read the privacy policy and terms of service</a
         >
-        <p class="copyright">Copyright by me, Petra, 2024</p>
+        <p class="copyright">Copyright &#169; by me, Petra, 2024</p>
       </div>
     </footer>
   </body>
