@@ -1,9 +1,23 @@
+.gallery-article {
+  margin: 0 auto;
+
+  p {
+    max-width: 70ch;
+  }
+}
+
+.gallery-header {
+  font-weight: 300;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1em;
   justify-content: center;
+  justify-items: center;
   width: 100%;
   margin-top: 2em;
 

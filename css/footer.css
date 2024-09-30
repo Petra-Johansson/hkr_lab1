@@ -5,14 +5,13 @@ footer {
   margin-top: 4em;
   position: relative;
   font-size: 0.9em;
-}
 
-footer .copyright {
-  color: var(--light-color);
-  text-align: center;
-  margin-top: 1.5em;
+  .last-row {
+    color: var(--light-color);
+    text-align: center;
+    margin-top: 1.5em;
+  }
 }
-
 .footer-grid {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -26,24 +25,36 @@ footer .copyright {
     color: var(--link-color);
   }
 
-  h3 {
-    font-weight: 300;
-    color: var(--light-color);
-    text-decoration: underline;
-    text-underline-offset: 0.2em;
-  }
-
-  .footer-links a {
-    padding: 0.6em 0;
+  .footer-links li {
+    :focus {
+      border: 2px solid var(--third-color);
+    }
+    a {
+      padding: 0.6em 0;
+      letter-spacing: 2px;
+    }
   }
 }
 
 @media screen and (max-width: 768px) {
   footer {
     padding: 1em;
+    font-size: 0.7em;
   }
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 1em;
+    h3 {
+      opacity: 0;
+    }
+    .footer-links ul,
+    .footer-links {
+      display: flex;
+
+      li,
+      .grid-item {
+        margin-left: 1em;
+      }
+    }
   }
 }

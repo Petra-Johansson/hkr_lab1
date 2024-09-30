@@ -9,6 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet:wght@100..400&display=swap" rel="stylesheet">
+
     <script
       src="https://kit.fontawesome.com/af716c3c48.js"
       crossorigin="anonymous"
@@ -20,7 +22,7 @@
   </head>
   <body>
     <header>
-      <h1><a href="index.html">PJ's Page</a></h1>
+      <h1><a href="index.html">Petras portfolio</a></h1>
       <nav>
         <ul>
           <li><a href="about.html">About</a></li>
@@ -30,94 +32,97 @@
         </ul>
       </nav>
     </header>
-    <main class="main">
+    <main>
       <h1>A Gallery</h1>
-      <p>
-        This is a gallery that uses CSS grid for layout and displays 9 pictures,
-        each representing a month of the year, randomly picked when adding the
-        images.
-      </p>
-      <p>
-        I decided to stick with the 3 x 3 layout until the screen reaches
-        max-width of 430px
-      </p>
 
-      <article class="gallery">
-        <div class="img-container">
-          <img
-            src="img/april.jpg"
-            alt="Img representing April"
-            title="Img representing April"
-          />
-          <p class="img-text">Img representing April</p>
-        </div>
+      <article class="gallery-article">
+        <h2 class="gallery-header">
+          This is the required gallery that uses CSS grid for layout and displays 9
+          pictures.
+        </h2>
+        <p>
+          Each picture is representing a month of the year, randomly picked when
+          adding the images.
+          I decided to stick with the 3 x 3 layout until the screen reaches
+          max-width of 430px.
+        </p>
+        <div class="gallery">
+          <div class="img-container">
+            <img
+              src="img/april.jpg"
+              alt="Img representing April"
+              title="Img representing April"
+            />
+            <p class="img-text">Img representing April</p>
+          </div>
 
-        <div class="img-container">
-          <img
-            src="img/august.jpg"
-            alt="Img representing August"
-            title="Img representing August"
-          />
-          <p class="img-text">Img representing August</p>
-        </div>
+          <div class="img-container">
+            <img
+              src="img/august.jpg"
+              alt="Img representing August"
+              title="Img representing August"
+            />
+            <p class="img-text">Img representing August</p>
+          </div>
 
-        <div class="img-container">
-          <img
-            src="img/december.jpg"
-            alt="Img representing December"
-            title="Img representing December"
-          />
-          <p class="img-text">Img representing December</p>
-        </div>
+          <div class="img-container">
+            <img
+              src="img/december.jpg"
+              alt="Img representing December"
+              title="Img representing December"
+            />
+            <p class="img-text">Img representing December</p>
+          </div>
 
-        <div class="img-container">
-          <img
-            src="img/july.jpg"
-            alt="Img representing July"
-            title="Img representing July"
-          />
-          <p class="img-text">Img representing July</p>
-        </div>
-        <div class="img-container">
-          <img
-            src="img/june.jpg"
-            alt="Img representing June"
-            title="Img representing June"
-          />
-          <p class="img-text">Img representing June</p>
-        </div>
-        <div class="img-container">
-          <img
-            src="img/may.jpg"
-            alt="Img representing May"
-            title="Img representing May"
-          />
-          <p class="img-text">Img representing May</p>
-        </div>
-        <div class="img-container">
-          <img
-            src="img/november.jpg"
-            alt="Img representing November"
-            title="Img representing November"
-          />
-          <p class="img-text">Img representing November</p>
-        </div>
-        <div class="img-container">
-          <img
-            src="img/october.jpg"
-            alt="Img representing October"
-            title="Img representing October"
-          />
-          <p class="img-text">Img representing October</p>
-        </div>
-        <div class="img-container">
-          <img
-            src="img/september.jpg"
-            alt="Img representing September"
-            title="Img representing September"
-            class="hover-filter"
-          />
-          <p class="img-text">Img representing September</p>
+          <div class="img-container">
+            <img
+              src="img/july.jpg"
+              alt="Img representing July"
+              title="Img representing July"
+            />
+            <p class="img-text">Img representing July</p>
+          </div>
+          <div class="img-container">
+            <img
+              src="img/june.jpg"
+              alt="Img representing June"
+              title="Img representing June"
+            />
+            <p class="img-text">Img representing June</p>
+          </div>
+          <div class="img-container">
+            <img
+              src="img/may.jpg"
+              alt="Img representing May"
+              title="Img representing May"
+            />
+            <p class="img-text">Img representing May</p>
+          </div>
+          <div class="img-container">
+            <img
+              src="img/november.jpg"
+              alt="Img representing November"
+              title="Img representing November"
+            />
+            <p class="img-text">Img representing November</p>
+          </div>
+          <div class="img-container">
+            <img
+              src="img/october.jpg"
+              alt="Img representing October"
+              title="Img representing October"
+            />
+            <p class="img-text">Img representing October</p>
+          </div>
+          <div class="img-container">
+            <img
+              src="img/september.jpg"
+              alt="Img representing September"
+              title="Img representing September"
+              class="hover-filter"
+            />
+            <p class="img-text">Img representing September</p>
+          </div>
         </div>
       </article>
     </main>
@@ -157,7 +162,11 @@
         </div>
       </div>
 
-      <p class="copyright">Copyright by me, Petra, 2024</p>
-    </footer>
+ <div class="last-row"></div>
+        <a href="#" class="grid-item"
+          >Click here to Read the privacy policy and terms of service</a
+        >
+        <p class="copyright">Copyright by me, Petra, 2024</p>
+      </div>    </footer>
   </body>
 </html>

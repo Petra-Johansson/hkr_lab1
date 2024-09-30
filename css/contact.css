@@ -1,5 +1,5 @@
 .contact-wrapper {
-  width: 80%;
+  width: 60%;
   display: grid;
   grid-template-columns: 40% 60%;
   gap: 2em;
@@ -12,7 +12,6 @@
   }
 
   .contact-links {
-    border-right: 1px solid var(--accent-color);
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -27,13 +26,24 @@
   }
 }
 .contact-form {
+  border-left: 1px solid var(--accent-color);
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
+  padding: 1em;
 
   label {
     margin-bottom: 0.2em;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &::after {
+      content: "* required";
+      color: red;
+      font-size: 0.6em;
+    }
   }
 
   input,
@@ -61,12 +71,15 @@
 
 @media screen and (max-width: 768px) {
   .contact-wrapper {
+    width: 95%;
     grid-template-columns: 1fr;
     align-items: center;
 
     .contact-links {
-      border-right: 0;
       gap: 1em;
+    }
+    .contact-form {
+      border-left: 0;
     }
   }
 }

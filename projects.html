@@ -9,6 +9,11 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+
     <script
       src="https://kit.fontawesome.com/af716c3c48.js"
       crossorigin="anonymous"
@@ -20,7 +25,7 @@
   </head>
   <body>
     <header>
-      <h1><a href="index.html">PJ's Page</a></h1>
+      <h1><a href="index.html">Petras portfolio</a></h1>
       <nav>
         <ul>
           <li><a href="about.html">About</a></li>
@@ -31,66 +36,99 @@
       </nav>
     </header>
     <main>
-      <h1>My Projects</h1>
-      <p>
-        This is where I will present projects I am working on or have completed
-      </p>
       <article class="project-gallery">
-        <div class="project-grid">
-          <p>
-            This is a project where I did stuff with some cool tools and this
-            should only be displayed when the screen size is above 768px
-          </p>
-          <div class="img-container">
-            <img
-              src="https://placehold.co/400x200"
-              alt="placeholder for future image"
-              height="200"
-              width="400"
-            />
-            <p class="img-desc">
-              This is a project where I did stuff with some cool tools and this
-              should only be displayed when the screen size is below 768px
-            </p>
-          </div>
-        </div>
+        <h1>My Projects</h1>
+        <p class="description">
+          Currently I don't have that many projects, but this is where I will
+          display them with a description, link to GitHub repo,(link to the
+          deployed app) and an image/image carousel
+        </p>
 
-        <div class="project-grid">
-          <p>
-            This is a project where I did stuff with some cool tools and this
-            should only be displayed when the screen size is above 768px
-          </p>
-          <div class="img-container">
-            <img
-              src="https://placehold.co/400x200/b17457/FFFFFF/png"
-              alt="placeholder for future image"
-              height="200"
-              width="400"
-            />
-            <p class="img-desc">
-              This is a project where I did stuff with some cool tools and this
-              should only be displayed when the screen size is below 768px
-            </p>
+        <article>
+          <h2>Personal Portfolio Website</h2>
+          <div class="project-grid">
+            <div class="project-description">
+              <p>
+                This is the project for this course: to create a Personal
+                Portfolio using only <code>HTML</code> and <code>CSS</code>.
+              </p>
+              <p>
+                The goal was to create a responsive, multi-page website with
+                consistent and advanced styling.
+              </p>
+              <p>
+                <a
+                  class="project-link"
+                  href="https://github.com/Petra-Johansson/hkr_lab1"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub Repo</span></a
+                >
+              </p>
+            </div>
+            <div class="img-container">
+              <img
+                src="https://placehold.co/400x200"
+                alt="placeholder for future image"
+                height="200"
+                width="400"
+              />
+            </div>
           </div>
-        </div>
-        <div class="project-grid">
-          <p>
-            This is a project where I did stuff with some cool tools and this
-            should only be displayed when the screen size is above 768px
-          </p>
-          <div class="img-container">
-            <img
-              src="https://placehold.co/400x200/698474/FFFFFF/png"
-              height="200"
-              width="400"
-              alt="placeholder for future image"
-            />
-            <p class="img-desc">
-              This is a project where I did stuff with some cool tools and this
-              should only be displayed when the screen size is below 768px
-            </p>
+        </article>
+        <article>
+          <h2>Project title</h2>
+          <div class="project-grid">
+            <div class="project-description">
+              <p>
+                This is a project where I did stuff with some cool tools and
+                this should only be displayed when the screen size is above
+                768px
+              </p>
+              <p>
+                <a class="project-link" href="#" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub Repo</span></a
+                >
+              </p>
+            </div>
+            <div class="img-container">
+              <img
+                src="https://placehold.co/400x200/b17457/FFFFFF/png"
+                alt="placeholder for future image"
+                height="200"
+                width="400"
+              />
+            </div>
           </div>
-        </div>
+        </article>
+        <article>
+          <h2>Project title</h2>
+          <div class="project-grid">
+            <div class="project-description">
+              <p>
+                This is a project where I did stuff with some cool tools and
+                this should only be displayed when the screen size is above
+                768px
+              </p>
+              <p>
+                <a class="project-link" href="#" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub Repo</span></a
+                >
+              </p>
+            </div>
+            <div class="img-container">
+              <img
+                src="https://placehold.co/400x200/698474/FFFFFF/png"
+                height="200"
+                width="400"
+                alt="placeholder for future image"
+              />
+            </div>
+          </div>
+        </article>
       </article>
     </main>
     <footer>
@@ -129,7 +167,12 @@
         </div>
       </div>
 
-      <p class="copyright">Copyright by me, Petra, 2024</p>
+      <div class="last-row">
+        <a href="#" class="grid-item"
+          >Click here to Read the privacy policy and terms of service</a
+        >
+        <p class="copyright">Copyright by me, Petra, 2024</p>
+      </div>
     </footer>
   </body>
 </html>

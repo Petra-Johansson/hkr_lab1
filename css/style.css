@@ -1,4 +1,5 @@
 :root {
+  color-scheme: light dark;
   --light-color: rgb(250, 247, 240);
   --dark-color: rgb(74, 73, 71);
   --third-color: rgb(177, 116, 87);
@@ -15,14 +16,39 @@
   transition-duration: 250ms;
   box-sizing: border-box;
 }
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dak-color);
+    color: var(--light-color);
+  }
+}
 body {
-  background-color: var(--light-color);
-  color: var(--dark-color);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  line-height: 1.2;
+  line-height: 1.4;
   font-size: 16px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1em;
+  width: 100%;
+  align-items: center;
+  h1 {
+    margin: 1em 0;
+    text-align: center;
+    font-family: "Playwrite DK Uloopet", "Montserrat";
+  }
 }
 li {
   list-style: none;
@@ -41,10 +67,6 @@ a {
     text-decoration: underline;
     text-underline-offset: 0.2em;
   }
-
-  &:focus {
-    border: 1px solid var(--third-color);
-  }
 }
 
 h1 {
@@ -52,17 +74,6 @@ h1 {
   font-size: 1.6em;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding: 1em;
-  max-width: 100%;
-  h1 {
-    margin: 1em 0;
-    text-align: center;
-  }
-}
 header {
   background-color: var(--accent-color);
   display: flex;
@@ -71,6 +82,9 @@ header {
   gap: 2em;
   padding: 1.5em;
 
+  h1 a {
+    font-family: "Playwrite DK Uloopet", "Montserrat";
+  }
   nav ul {
     display: flex;
     align-items: center;
@@ -82,8 +96,15 @@ header {
     background-color: var(--third-color);
     padding: 0.4em;
   }
+
+  :focus {
+    border: 2px solid var(--third-color);
+  }
 }
 
+code {
+  font-family: "Courier New", monospace;
+}
 @media screen and (max-width: 768px) {
   header {
     width: 100%;
@@ -94,5 +115,16 @@ header {
     nav ul {
       gap: 1em;
     }
+
+    a {
+      padding: 0;
+      font-size: 0.7em;
+    }
+  }
+}
+
+@media screen and (max-width: 340px) {
+  body {
+    font-size: 0.7em;
   }
 }
