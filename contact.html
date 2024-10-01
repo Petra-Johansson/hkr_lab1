@@ -39,60 +39,62 @@
       </nav>
     </header>
     <main>
-      <h1>Contact me</h1>
-      <div class="contact-wrapper">
-        <div class="contact-links">
-          <section>
-            <h2>I would love to hear from you!</h2>
-            <p>Choose one of the links or fill in the contact form</p>
-          </section>
-          <a
-            class="link-item"
-            href="https://www.linkedin.com/in/petra-johansson89/"
-            target="_blank"
-          >
-            <i class="fa-brands fa-linkedin"></i>
-            <span> Connect on LinkedIn</span></a
-          >
+      <article class="contact-article-wrapper">
+        <h1>Contact me</h1>
+        <div class="contact-wrapper">
+          <div class="contact-links">
+            <section>
+              <h2>I would love to hear from you!</h2>
+              <p>Choose one of the links or fill in the contact form</p>
+            </section>
+            <a
+              class="link-item"
+              href="https://www.linkedin.com/in/petra-johansson89/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+              <span> Connect on LinkedIn</span></a
+            >
 
-          <a class="link-item" href="mailto:johansson.m.petra@gmail.com">
-            <i class="fa-solid fa-at"></i> <span>Send me an email </span></a
+            <a class="link-item" href="mailto:johansson.m.petra@gmail.com">
+              <i class="fa-solid fa-at"></i> <span>Send me an email </span></a
+            >
+          </div>
+          <form
+            class="contact-form"
+            method="POST"
+            action="mailto:johansson.m.petra@gmail.com"
+            enctype="multipart/form-data"
           >
+            <label for="name">Your name: </label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+
+            <label for="email"> Your E-mail:</label>
+
+            <input
+              class="form-control"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="your@email.com"
+              required
+            />
+
+            <label for="message">Your message:</label>
+
+            <textarea rows="4" id="message" name="message" required></textarea>
+
+            <input type="submit" value="Send" class="send-btn" />
+          </form>
         </div>
-        <form
-          class="contact-form"
-          method="POST"
-          action="mailto:johansson.m.petra@gmail.com"
-          enctype="multipart/form-data"
-        >
-          <label for="name">Your name: </label>
-
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your Name"
-            required
-          />
-
-          <label for="email"> Your E-mail:</label>
-
-          <input
-            class="form-control"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="your@email.com"
-            required
-          />
-
-          <label for="message">Your message:</label>
-
-          <textarea rows="4" id="message" name="message" required></textarea>
-
-          <input type="submit" value="Send" class="send-btn" />
-        </form>
-      </div>
+      </article>
     </main>
 
     <footer>

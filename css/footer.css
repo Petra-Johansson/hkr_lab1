@@ -54,7 +54,14 @@ footer {
       li,
       .grid-item {
         margin-left: 1em;
+        padding: 0;
       }
     }
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .footer-grid {
+    gap: 0.5em;
   }
 }

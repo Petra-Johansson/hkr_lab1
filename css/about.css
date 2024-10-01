@@ -1,20 +1,20 @@
 .about-article-wrapper {
   width: 70%;
   margin: 0 auto;
-}
-.about-article {
-  margin: 0 auto;
-  width: 75ch;
 
   h2 {
     padding-top: 0.6em;
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin: 1em 0;
   }
 }
+.about-article {
+  margin: 0 auto;
+  max-width: 75ch;
+}
 .presentation {
-  width: 75ch;
+  max-width: 75ch;
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
@@ -77,10 +77,18 @@ table {
 }
 
 @media screen and (max-width: 768px) {
-  .about-article {
-    width: 100%;
+  .about-article-wrapper {
+    width: 90%;
   }
-  .img-container {
-    max-width: 50px;
+  .presentation {
+    .img-container {
+      max-width: 80%;
+      border: 2px solid var(--third-color);
+    }
+  }
+  th,
+  td,
+  a {
+    letter-spacing: 0.5px;
   }
 }

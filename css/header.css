@@ -7,6 +7,7 @@ header {
   padding: 1.5em;
 
   h1 a {
+    padding: 0.6em 0;
     font-family: "Playwrite DK Uloopet", "Montserrat";
   }
   nav ul {

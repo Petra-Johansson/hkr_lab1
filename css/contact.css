@@ -1,3 +1,7 @@
+.contact-article-wrapper {
+  width: 100%;
+}
+
 .contact-wrapper {
   width: 60%;
   display: grid;
@@ -15,6 +19,7 @@
     display: flex;
     flex-direction: column;
     gap: 2em;
+    padding: 1em;
 
     .link-item {
       color: var(--dark-color);
