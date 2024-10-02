@@ -11,31 +11,30 @@ footer {
     text-align: center;
     margin-top: 1.5em;
   }
-}
-.footer-grid {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  justify-items: center;
-
-  .grid-item {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    text-decoration: none;
-    color: var(--link-color);
+  :focus {
+    border: 2px solid var(--third-color);
   }
 
-  .footer-links li {
-    :focus {
-      border: 2px solid var(--third-color);
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+
+    .grid-item {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      color: var(--link-color);
     }
-    a {
-      padding: 0.6em 0;
-      letter-spacing: 2px;
+
+    .footer-links li {
+      a {
+        padding: 0.6em 0;
+        letter-spacing: 2px;
+      }
     }
   }
 }
-
 @media screen and (max-width: 768px) {
   footer {
     padding: 1em;

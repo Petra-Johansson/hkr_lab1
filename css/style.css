@@ -74,6 +74,7 @@ a {
   padding: 0.6em 1em;
 
   &:hover {
+    transition-duration: 250ms;
     font-weight: bold;
     text-decoration: underline;
     text-underline-offset: 0.2em;
