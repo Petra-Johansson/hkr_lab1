@@ -91,12 +91,13 @@ code {
 }
 
 .index-article {
+  max-width: 70ch;
   h2 {
     margin: 1em 0;
   }
   .ex-list li {
     margin-top: 0.7em;
-    width: 65ch;
+    max-width: 65ch;
 
     &::before {
       content: " - ";

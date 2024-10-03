@@ -39,21 +39,22 @@ footer {
   footer {
     padding: 1em;
     font-size: 0.7em;
-  }
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 1em;
-    h3 {
-      opacity: 0;
-    }
-    .footer-links ul,
-    .footer-links {
-      display: flex;
 
-      li,
-      .grid-item {
-        margin-left: 1em;
-        padding: 0;
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 1em;
+      h3 {
+        opacity: 0;
+      }
+      .footer-links ul,
+      .footer-links {
+        display: flex;
+
+        li,
+        .grid-item {
+          margin-left: 1em;
+          padding: 0;
+        }
       }
     }
   }
